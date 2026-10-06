@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-ink: #0b1220;
+  --color-ink-2: #3b4456;
+  --color-ink-3: #6b7385;
+  --color-line: #e6e8ee;
+  --color-line-2: #f0f2f6;
+  --color-canvas: #f7f8fa;
+  --color-surface: #ffffff;
+  --color-brand: #2f5bea;
+  --color-brand-soft: #eef2ff;
+  --color-met: #0e9f6e;
+  --color-met-soft: #e8f7f1;
+  --color-miss: #c27803;
+  --color-miss-soft: #fdf6e7;
+  --color-fail: #d92d4b;
+  --color-fail-soft: #fdecef;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html, body { background: var(--color-canvas); color: var(--color-ink); }
+body { font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+::selection { background: #dbe4ff; }
+
+.card { background: var(--color-surface); border: 1px solid var(--color-line); border-radius: 14px; }
+.hairline { border-color: var(--color-line); }
+.mono { font-family: var(--font-geist-mono), ui-monospace, monospace; }
+
+/* scanner */
+.scan-grid {
+  background-image: linear-gradient(rgba(47,91,234,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(47,91,234,.08) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+.scan-beam {
+  background: linear-gradient(180deg, rgba(47,91,234,0) 0%, rgba(47,91,234,.18) 70%, rgba(47,91,234,.9) 98%, rgba(255,255,255,1) 100%);
+  box-shadow: 0 8px 24px rgba(47,91,234,.45);
+}
+.shimmer {
+  background: linear-gradient(90deg, #f0f2f6 0%, #f8f9fb 50%, #f0f2f6 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+}
+@keyframes shimmer { to { background-position: -200% 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* Tailwind v4 dropped the pointer cursor on buttons — restore it for every clickable control. */
+button:not(:disabled), [role="button"]:not([aria-disabled="true"]), summary, select, label[for] { cursor: pointer; }
+button:disabled { cursor: not-allowed; }

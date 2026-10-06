@@ -1,0 +1,17 @@
+{
+  "case_id": "PA-2609-8127",
+  "received_ts": "2026-09-22 18:54",
+  "channel": "PORTAL",
+  "urgency": "STANDARD",
+  "client_id": "KESTREL",
+  "requesting_provider": "Cumberland Family Medicine",
+  "provider_npi": "1097604929",
+  "status": "AWAITING_CLINICAL_REVIEW",
+  "member_id": "BHA75943203",
+  "patient_name": "Jessica Montoya",
+  "patient_dob": "12/17/1947",
+  "date_of_service": "2026-10-17",
+  "service_code": "BHA-IMG-0721",
+  "service_requested": "Advanced Imaging: MRI of the Lumbar Spine",
+  "clinical_notes": "Pt Jessica Montoya (DOB 12/17/1947, MRN-5084986, ph (221) 319-6104). Patient presents with low back pain radiating down the left leg in an L5 distribution with positive straight-leg raise. Has completed 8 weeks of PT and scheduled naproxen without adequate relief. Requesting MRI lumbar spine without contrast."
+}

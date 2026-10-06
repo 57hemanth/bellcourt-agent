@@ -1,0 +1,17 @@
+{
+  "case_id": "PA-2609-8110",
+  "received_ts": "2026-09-22 19:36",
+  "channel": "PORTAL",
+  "urgency": "STANDARD",
+  "client_id": "RB-ACA",
+  "requesting_provider": "Desert Sky Orthopedics",
+  "provider_npi": "1209662994",
+  "status": "AWAITING_CLINICAL_REVIEW",
+  "member_id": "RBA42549068",
+  "patient_name": "Michael Brooks",
+  "patient_dob": "09/28/1985",
+  "date_of_service": "2026-09-30",
+  "service_code": "BHA-SURG-3052",
+  "service_requested": "Septoplasty",
+  "clinical_notes": "Pt Michael Brooks (DOB 09/28/1985, MRN-8660143, ph (752) 357-2544). Chronic nasal obstruction, worse on right. Exam: leftward septal deviation obstructing right airway. Fluticasone and cetirizine x 6 weeks without improvement. Requesting septoplasty."
+}

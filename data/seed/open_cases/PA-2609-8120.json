@@ -1,0 +1,15 @@
+{
+  "case_id": "PA-2609-8120",
+  "received_ts": "2026-09-23 21:46",
+  "channel": "FAX",
+  "urgency": "STANDARD",
+  "client_id": "JUNIPER",
+  "requesting_provider": "Metro Wound & Hyperbaric",
+  "provider_npi": "1798567745",
+  "status": "RECEIVED_NOT_KEYED",
+  "fax_image": "fax_inbox/FAX-PA-2609-8120.png",
+  "member_id": null,
+  "date_of_service": null,
+  "service_code": null,
+  "clinical_notes": null
+}

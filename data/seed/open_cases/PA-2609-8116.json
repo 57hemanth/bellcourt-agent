@@ -1,0 +1,17 @@
+{
+  "case_id": "PA-2609-8116",
+  "received_ts": "2026-09-24 07:45",
+  "channel": "PORTAL",
+  "urgency": "STANDARD",
+  "client_id": "KESTREL",
+  "requesting_provider": "Riverside ENT",
+  "provider_npi": "1901685167",
+  "status": "AWAITING_CLINICAL_REVIEW",
+  "member_id": "BHA41739157",
+  "patient_name": "Richard Chen",
+  "patient_dob": "05/28/1980",
+  "date_of_service": "2026-09-29",
+  "service_code": "BHA-SURG-4310",
+  "service_requested": "Bariatric (Weight-Loss) Surgery",
+  "clinical_notes": "Pt Richard Chen (DOB 05/28/1980, MRN-1344999, ph (263) 421-3250). BMI 43.2. Comorbidities: type 2 diabetes on metformin. Participated in physician-supervised weight management program for 0 months; did not enroll. Psychological evaluation completed; cleared for surgery. Requesting laparoscopic sleeve gastrectomy."
+}

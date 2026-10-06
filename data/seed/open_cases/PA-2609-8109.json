@@ -1,0 +1,17 @@
+{
+  "case_id": "PA-2609-8109",
+  "received_ts": "2026-09-23 08:47",
+  "channel": "PORTAL",
+  "urgency": "STANDARD",
+  "client_id": "RB-ACA",
+  "requesting_provider": "Canyon Surgical Specialists",
+  "provider_npi": "1158982471",
+  "status": "AWAITING_CLINICAL_REVIEW",
+  "member_id": "RBA15854727",
+  "patient_name": "Barbara Jefferson",
+  "patient_dob": "07/02/1966",
+  "date_of_service": "2026-10-04",
+  "service_code": "BHA-SURG-4310",
+  "service_requested": "Bariatric (Weight-Loss) Surgery",
+  "clinical_notes": "Pt Barbara Jefferson (DOB 07/02/1966, MRN-7331374, ph (403) 660-5982). BMI 44.1. Comorbidities: type 2 diabetes on metformin. Participated in physician-supervised weight management program for 6 months (2024-2025). Psychological evaluation completed; cleared for surgery. Requesting laparoscopic sleeve gastrectomy."
+}

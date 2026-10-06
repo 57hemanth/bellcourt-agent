@@ -1,0 +1,15 @@
+{
+  "case_id": "PA-2609-8113",
+  "received_ts": "2026-09-22 18:51",
+  "channel": "FAX",
+  "urgency": "STANDARD",
+  "client_id": "HARLAN",
+  "requesting_provider": "Front Range Sleep Center",
+  "provider_npi": "1109300615",
+  "status": "RECEIVED_NOT_KEYED",
+  "fax_image": "fax_inbox/FAX-PA-2609-8113.png",
+  "member_id": null,
+  "date_of_service": null,
+  "service_code": null,
+  "clinical_notes": null
+}

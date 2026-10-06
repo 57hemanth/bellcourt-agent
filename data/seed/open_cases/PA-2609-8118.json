@@ -1,0 +1,17 @@
+{
+  "case_id": "PA-2609-8118",
+  "received_ts": "2026-09-22 21:53",
+  "channel": "PORTAL",
+  "urgency": "STANDARD",
+  "client_id": "SORREL",
+  "requesting_provider": "Blue Ridge Home Health",
+  "provider_npi": "1272854907",
+  "status": "AWAITING_CLINICAL_REVIEW",
+  "member_id": "BHA91091434",
+  "patient_name": "Linda Quintero",
+  "patient_dob": "02/17/1986",
+  "date_of_service": "2026-09-30",
+  "service_code": "BHA-SURG-1582",
+  "service_requested": "Blepharoplasty (Upper Eyelid Surgery)",
+  "clinical_notes": "Pt Linda Quintero (DOB 02/17/1986, MRN-5615755, ph (390) 616-4214). Bilateral upper lid dermatochalasis, patient reports difficulty seeing when driving. Humphrey visual field: superior field loss 18 degrees taped vs untaped. External photographs attached. Requesting bilateral upper blepharoplasty."
+}

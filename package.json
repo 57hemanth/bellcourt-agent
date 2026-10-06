@@ -6,12 +6,23 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "eval": "tsx scripts/eval.ts",
+    "seed:neo4j": "tsx scripts/seed-neo4j.ts",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@google/genai": "^2.27.0",
+    "@langchain/core": "^1.2.16",
+    "@langchain/langgraph": "^1.4.19",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.52.0",
+    "motion": "^14.0.0",
+    "neo4j-driver": "^6.2.0",
     "next": "16.3.8",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "react-force-graph-2d": "^1.29.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -21,6 +32,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.8",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }

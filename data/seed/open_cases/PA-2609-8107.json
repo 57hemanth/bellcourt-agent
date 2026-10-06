@@ -1,0 +1,17 @@
+{
+  "case_id": "PA-2609-8107",
+  "received_ts": "2026-09-25 09:07",
+  "channel": "ELECTRONIC",
+  "urgency": "URGENT",
+  "client_id": "RB-MA",
+  "requesting_provider": "Peachtree Endocrine Associates",
+  "provider_npi": "1515546693",
+  "status": "AWAITING_CLINICAL_REVIEW",
+  "member_id": "RBM72888319",
+  "patient_name": "Melissa Bishop",
+  "patient_dob": "10/02/1948",
+  "date_of_service": "2026-10-18",
+  "service_code": "BHA-IMG-7519",
+  "service_requested": "Coronary CT Angiography (CCTA)",
+  "clinical_notes": "Pt Melissa Bishop (DOB 10/02/1948, MRN-5800056, ph (312) 582-4335). Exertional chest pressure x 2 months. Pre-test probability assessed as intermediate. Requesting coronary CTA."
+}

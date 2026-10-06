@@ -1,0 +1,17 @@
+{
+  "case_id": "PA-2609-8122",
+  "received_ts": "2026-09-23 09:55",
+  "channel": "PORTAL",
+  "urgency": "STANDARD",
+  "client_id": "OSTR",
+  "requesting_provider": "Gateway Bariatrics",
+  "provider_npi": "1086993668",
+  "status": "AWAITING_CLINICAL_REVIEW",
+  "member_id": "BHA71155573",
+  "patient_name": "Paul Estrada",
+  "patient_dob": "06/20/1952",
+  "date_of_service": "2026-10-09",
+  "service_code": "BHA-SURG-2988",
+  "service_requested": "Arthroscopic Knee Surgery",
+  "clinical_notes": "Pt Paul Estrada (DOB 06/20/1952, MRN-7576592, ph (602) 932-3594). Right knee pain. No mechanical symptoms. MRI: no discrete meniscal tear. X-ray: Kellgren-Lawrence grade 4. 6 weeks PT, NSAIDs, one steroid injection. Requesting right knee arthroscopy with partial meniscectomy."
+}

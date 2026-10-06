@@ -1,0 +1,10 @@
+# Optional: Neo4j for the knowledge graph (the app falls back to an in-memory graph without it).
+services:
+  neo4j:
+    image: neo4j:5
+    ports: ["7474:7474", "7687:7687"]
+    environment:
+      NEO4J_AUTH: neo4j/bellcourt-kb
+    volumes: ["neo4j-data:/data"]
+volumes:
+  neo4j-data:

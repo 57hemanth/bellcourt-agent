@@ -1,0 +1,17 @@
+{
+  "case_id": "PA-2609-8103",
+  "received_ts": "2026-09-23 06:24",
+  "channel": "PHONE",
+  "urgency": "STANDARD",
+  "client_id": "RB-MA",
+  "requesting_provider": "Lone Star Imaging Partners",
+  "provider_npi": "1984634672",
+  "status": "AWAITING_CLINICAL_REVIEW",
+  "member_id": "RBM62557637",
+  "patient_name": "Maria Zimmerman",
+  "patient_dob": "10/07/1986",
+  "date_of_service": "2026-09-29",
+  "service_code": "BHA-SURG-2744",
+  "service_requested": "Total Knee Arthroplasty (TKA)",
+  "clinical_notes": "Pt Maria Zimmerman (DOB 10/07/1986, MRN-9059570, ph (798) 829-6455). Left knee OA, KL grade 4 on standing films. BMI 42.6. Unable to walk more than one block, difficulty with stairs and dressing. Conservative mgmt x 6 months (PT, NSAIDs, injections). Pre-op optimization discussed with patient (weight, A1c, smoking) and documented; patient enrolled in pre-hab. Requesting left total knee arthroplasty."
+}

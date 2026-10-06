@@ -1,0 +1,17 @@
+{
+  "case_id": "PA-2609-8112",
+  "received_ts": "2026-09-25 08:06",
+  "channel": "PORTAL",
+  "urgency": "STANDARD",
+  "client_id": "HARLAN",
+  "requesting_provider": "Riverside ENT",
+  "provider_npi": "1331775394",
+  "status": "AWAITING_CLINICAL_REVIEW",
+  "member_id": "BHA79385700",
+  "patient_name": "Susan Underwood",
+  "patient_dob": "02/14/1992",
+  "date_of_service": "2026-10-18",
+  "service_code": "BHA-REH-9711",
+  "service_requested": "Outpatient Physical Therapy Beyond the Initial 12 Visits",
+  "clinical_notes": "Pt Susan Underwood (DOB 02/14/1992, MRN-4457338, ph (406) 949-8733). Post-op R rotator cuff repair. 26 PT visits used this plan year; requesting 8 additional. Shoulder flexion improved 90 to 140 degrees; goal 170. QuickDASH 58 to 34. Progress note dated within last 10 visits attached."
+}

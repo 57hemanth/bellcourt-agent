@@ -1,0 +1,17 @@
+{
+  "case_id": "PA-2609-8129",
+  "received_ts": "2026-09-23 09:21",
+  "channel": "ELECTRONIC",
+  "urgency": "STANDARD",
+  "client_id": "OSTR",
+  "requesting_provider": "Valley Spine & Pain",
+  "provider_npi": "1146306332",
+  "status": "AWAITING_CLINICAL_REVIEW",
+  "member_id": "BHA68220272",
+  "patient_name": "Rosa Sandoval",
+  "patient_dob": "05/08/1982",
+  "date_of_service": "2026-10-09",
+  "service_code": "BHA-IMG-7519",
+  "service_requested": "Coronary CT Angiography (CCTA)",
+  "clinical_notes": "Pt Rosa Sandoval (DOB 05/08/1982, MRN-7183006, ph (612) 251-8404). Exertional chest pressure x 2 months. Pre-test probability assessed as intermediate. Requesting coronary CTA."
+}

@@ -1,0 +1,15 @@
+{
+  "case_id": "PA-2609-8123",
+  "received_ts": "2026-09-24 17:01",
+  "channel": "FAX",
+  "urgency": "STANDARD",
+  "client_id": "OSTR",
+  "requesting_provider": "Mesa Physical Therapy",
+  "provider_npi": "1716675013",
+  "status": "RECEIVED_NOT_KEYED",
+  "fax_image": "fax_inbox/FAX-PA-2609-8123.png",
+  "member_id": null,
+  "date_of_service": null,
+  "service_code": null,
+  "clinical_notes": null
+}

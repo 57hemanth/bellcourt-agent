@@ -1,0 +1,17 @@
+{
+  "case_id": "PA-2609-8121",
+  "received_ts": "2026-09-22 16:15",
+  "channel": "PORTAL",
+  "urgency": "STANDARD",
+  "client_id": "JUNIPER",
+  "requesting_provider": "Summit Metabolic Surgery Center",
+  "provider_npi": "1379837790",
+  "status": "AWAITING_CLINICAL_REVIEW",
+  "member_id": "BHA56805493",
+  "patient_name": "James Yamamoto",
+  "patient_dob": "10/23/1980",
+  "date_of_service": "2026-10-03",
+  "service_code": "BHA-VASC-3647",
+  "service_requested": "Endovenous Ablation of Varicose Veins",
+  "clinical_notes": "Pt James Yamamoto (DOB 10/23/1980, MRN-5028643, ph (408) 636-5559). Aching and heaviness in right leg, ankle edema by evening. Duplex: GSV reflux 700 ms. Compression stockings 20-30 mmHg x 4 months. Requesting endovenous radiofrequency ablation R GSV."
+}

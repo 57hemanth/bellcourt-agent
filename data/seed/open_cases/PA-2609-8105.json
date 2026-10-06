@@ -1,0 +1,17 @@
+{
+  "case_id": "PA-2609-8105",
+  "received_ts": "2026-09-25 11:14",
+  "channel": "PORTAL",
+  "urgency": "STANDARD",
+  "client_id": "RB-MA",
+  "requesting_provider": "Gateway Bariatrics",
+  "provider_npi": "1904491900",
+  "status": "AWAITING_CLINICAL_REVIEW",
+  "member_id": "RBM65880648",
+  "patient_name": "James Hightower",
+  "patient_dob": "10/11/1960",
+  "date_of_service": "2026-10-04",
+  "service_code": "BHA-DX-9581",
+  "service_requested": "Attended In-Laboratory Polysomnography (Sleep Study)",
+  "clinical_notes": "Pt James Hightower (DOB 10/11/1960, MRN-9587489, ph (402) 822-4663). Loud snoring, witnessed apneas, Epworth 14. No prior sleep testing. Requesting attended in-lab polysomnography."
+}

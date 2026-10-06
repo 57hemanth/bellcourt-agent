@@ -1,0 +1,15 @@
+{
+  "case_id": "PA-2609-8106",
+  "received_ts": "2026-09-24 03:31",
+  "channel": "FAX",
+  "urgency": "URGENT",
+  "client_id": "RB-MA",
+  "requesting_provider": "Buckeye Vascular Clinic",
+  "provider_npi": "1828463390",
+  "status": "RECEIVED_NOT_KEYED",
+  "fax_image": "fax_inbox/FAX-PA-2609-8106.png",
+  "member_id": null,
+  "date_of_service": null,
+  "service_code": null,
+  "clinical_notes": null
+}

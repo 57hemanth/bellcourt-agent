@@ -1,0 +1,15 @@
+{
+  "case_id": "PA-2609-8117",
+  "received_ts": "2026-09-23 07:35",
+  "channel": "FAX",
+  "urgency": "STANDARD",
+  "client_id": "KESTREL",
+  "requesting_provider": "Cumberland Family Medicine",
+  "provider_npi": "1111975665",
+  "status": "RECEIVED_NOT_KEYED",
+  "fax_image": "fax_inbox/FAX-PA-2609-8117.png",
+  "member_id": null,
+  "date_of_service": null,
+  "service_code": null,
+  "clinical_notes": null
+}

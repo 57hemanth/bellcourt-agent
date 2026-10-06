@@ -1,0 +1,17 @@
+{
+  "case_id": "PA-2609-8114",
+  "received_ts": "2026-09-23 08:12",
+  "channel": "PHONE",
+  "urgency": "STANDARD",
+  "client_id": "BRIGHT",
+  "requesting_provider": "Summit Metabolic Surgery Center",
+  "provider_npi": "1364212828",
+  "status": "AWAITING_CLINICAL_REVIEW",
+  "member_id": "BHA64300909",
+  "patient_name": "Joseph Chen",
+  "patient_dob": "03/03/1979",
+  "date_of_service": "2026-10-01",
+  "service_code": "BHA-RAD-5205",
+  "service_requested": "Proton Beam Radiation Therapy",
+  "clinical_notes": "Pt Joseph Chen (DOB 03/03/1979, MRN-2694427, ph (475) 947-5693). Choroidal (uveal) melanoma right eye. Requesting proton beam therapy."
+}

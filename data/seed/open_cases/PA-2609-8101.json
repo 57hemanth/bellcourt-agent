@@ -1,0 +1,17 @@
+{
+  "case_id": "PA-2609-8101",
+  "received_ts": "2026-09-23 05:30",
+  "channel": "PORTAL",
+  "urgency": "STANDARD",
+  "client_id": "RB-MA",
+  "requesting_provider": "Desert Sky Orthopedics",
+  "provider_npi": "1133251479",
+  "status": "AWAITING_CLINICAL_REVIEW",
+  "member_id": "RBM78107469",
+  "patient_name": "Patricia Whitaker",
+  "patient_dob": "04/24/1991",
+  "date_of_service": "2026-10-17",
+  "service_code": "BHA-DME-2103",
+  "service_requested": "Continuous Glucose Monitors (CGM)",
+  "clinical_notes": "Pt Patricia Whitaker (DOB 04/24/1991, MRN-2036324, ph (435) 495-8284). Dx: type 2 diabetes mellitus (E11.65), A1c 8.9%. Current regimen: insulin glargine 28 units nightly plus metformin. Requesting CGM system and sensors."
+}

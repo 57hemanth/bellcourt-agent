@@ -1,0 +1,17 @@
+{
+  "case_id": "PA-2609-8119",
+  "received_ts": "2026-09-25 07:10",
+  "channel": "ELECTRONIC",
+  "urgency": "STANDARD",
+  "client_id": "SORREL",
+  "requesting_provider": "Summit Metabolic Surgery Center",
+  "provider_npi": "1404806777",
+  "status": "AWAITING_CLINICAL_REVIEW",
+  "member_id": "BHA47988531",
+  "patient_name": "Thomas Okafor",
+  "patient_dob": "10/27/2000",
+  "date_of_service": "2026-10-13",
+  "service_code": "BHA-LAB-8162",
+  "service_requested": "Genetic Testing for Hereditary Breast and Ovarian Cancer (BRCA1/2)",
+  "clinical_notes": "Pt Thomas Okafor (DOB 10/27/2000, MRN-8876344, ph (259) 499-8605). Personal history of breast cancer diagnosed at age 38. Sister tested positive for pathogenic BRCA2 variant last year. Requesting BRCA1/2 full sequencing."
+}

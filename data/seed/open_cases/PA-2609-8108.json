@@ -1,0 +1,15 @@
+{
+  "case_id": "PA-2609-8108",
+  "received_ts": "2026-09-22 20:50",
+  "channel": "FAX",
+  "urgency": "STANDARD",
+  "client_id": "RB-ACA",
+  "requesting_provider": "Valley Spine & Pain",
+  "provider_npi": "1951792637",
+  "status": "RECEIVED_NOT_KEYED",
+  "fax_image": "fax_inbox/FAX-PA-2609-8108.png",
+  "member_id": null,
+  "date_of_service": null,
+  "service_code": null,
+  "clinical_notes": null
+}

@@ -1,0 +1,15 @@
+{
+  "case_id": "PA-2609-8125",
+  "received_ts": "2026-09-25 10:52",
+  "channel": "FAX",
+  "urgency": "URGENT",
+  "client_id": "HARLAN",
+  "requesting_provider": "Gateway Bariatrics",
+  "provider_npi": "1158778439",
+  "status": "RECEIVED_NOT_KEYED",
+  "fax_image": "fax_inbox/FAX-PA-2609-8125.png",
+  "member_id": null,
+  "date_of_service": null,
+  "service_code": null,
+  "clinical_notes": null
+}

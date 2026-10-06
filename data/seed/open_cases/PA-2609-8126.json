@@ -1,0 +1,17 @@
+{
+  "case_id": "PA-2609-8126",
+  "received_ts": "2026-09-22 12:44",
+  "channel": "PHONE",
+  "urgency": "STANDARD",
+  "client_id": "RB-ACA",
+  "requesting_provider": "Front Range Sleep Center",
+  "provider_npi": "1564171855",
+  "status": "AWAITING_CLINICAL_REVIEW",
+  "member_id": "RBA90701425",
+  "patient_name": "Linda Bishop",
+  "patient_dob": "09/27/1992",
+  "date_of_service": "2026-10-16",
+  "service_code": "BHA-DME-2103",
+  "service_requested": "Continuous Glucose Monitors (CGM)",
+  "clinical_notes": "Pt Linda Bishop (DOB 09/27/1992, MRN-1868048, ph (894) 644-8278). Dx: type 2 diabetes mellitus (E11.65), A1c 8.9%. Current regimen: insulin glargine 28 units nightly plus metformin. Requesting CGM system and sensors."
+}
