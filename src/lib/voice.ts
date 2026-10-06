@@ -81,6 +81,12 @@ export function caseCandidates(spoken: string): string[] {
   return all.filter((c) => { const last = c.id.split("-").at(-1)!.replace(/^0+(?=\d)/, ""); return last === digits || c.id.replace(/\D/g, "").endsWith(digits) && digits.length >= 4; }).map((c) => c.id);
 }
 
+/** "1979-07-12" ↔ "1979-12-07": accepted only when the date is ambiguous (day and month both ≤ 12). */
+function swapDayMonth(iso: string): string | null {
+  const [y, m, d] = iso.split("-");
+  return Number(d) <= 12 && Number(m) <= 12 && m !== d ? `${y}-${d}-${m}` : null;
+}
+
 const failures = new Map<string, number>();
 
 export async function voiceLookup(caseSpoken: string, dobSpoken: string) {
@@ -88,7 +94,14 @@ export async function voiceLookup(caseSpoken: string, dobSpoken: string) {
   const nope = { verified: false, message: "No case matched that case number and date of birth." };
   const candidates = caseCandidates(caseSpoken ?? "");
   const dobOf = (cid: string) => { const d = getCase(cid)?.extraction?.fields.patientDob; return d ? normalizeDob(d) : null; };
-  const matching = dob ? candidates.filter((cid) => dobOf(cid) === dob) : [];
+  const swapped = dob ? swapDayMonth(dob) : null;
+  let matching = dob ? candidates.filter((cid) => dobOf(cid) === dob) : [];
+  let usedSwap = false;
+  if (!matching.length && swapped) {
+    // US forms write MM/DD; callers used to DD/MM often read 07/12 as "7 December".
+    matching = candidates.filter((cid) => dobOf(cid) === swapped);
+    usedSwap = matching.length > 0;
+  }
   // A short number is only accepted when exactly one case with that number matches the DOB.
   const id = matching.length === 1 ? matching[0] : candidates.length === 1 ? candidates[0] : null;
   if (!id || !dob) return nope;
@@ -97,14 +110,14 @@ export async function voiceLookup(caseSpoken: string, dobSpoken: string) {
   const f = c.extraction?.fields;
   const caseDob = f?.patientDob ? normalizeDob(f.patientDob) : null;
   const at = new Date().toISOString();
-  if (!caseDob || caseDob !== dob) {
+  if (!caseDob || (caseDob !== dob && !(usedSwap && caseDob === swapped))) {
     failures.set(id, (failures.get(id) ?? 0) + 1);
     c.audit.push({ at, actor: "bell-voice", action: "VOICE_VERIFICATION_FAILED", detail: "Caller DOB did not match" });
     await saveCase(c);
     return nope;
   }
   failures.delete(id);
-  c.audit.push({ at, actor: "bell-voice", action: "VOICE_STATUS_DISCLOSED", detail: "Status read to verified caller (case number + DOB)" });
+  c.audit.push({ at, actor: "bell-voice", action: "VOICE_STATUS_DISCLOSED", detail: `Status read to verified caller (case number + DOB${usedSwap ? "; DOB matched with day and month order swapped" : ""})` });
   await saveCase(c);
   const hoursLeft = Math.round((new Date(c.dueAt).getTime() - Date.now()) / 3600_000);
   return {

@@ -6,7 +6,8 @@ import fs from "node:fs";
 import path from "node:path";
 import type { CaseRecord } from "./types";
 
-const DIR = path.join(process.cwd(), "data", "runtime");
+// Vercel functions have a read-only filesystem except /tmp (ephemeral, per instance).
+const DIR = process.env.VERCEL ? path.join("/tmp", "bell-runtime") : path.join(process.cwd(), "data", "runtime");
 const FILE = path.join(DIR, "cases.json");
 export const UPLOAD_DIR = path.join(DIR, "uploads");
 
