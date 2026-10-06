@@ -144,4 +144,6 @@ export interface CaseRecord {
   audit: AuditEvent[];
   supplements: { at: string; text: string }[];
   declaredUrgency?: Urgency;
+  graphThread?: string; // LangGraph thread currently paused at human_review
+  graphRuns?: number;
 }

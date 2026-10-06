@@ -50,6 +50,32 @@ Open-queue cases that are deliberate traps include: 8100 (void memo plus outdate
 - The deterministic parser was built against the pack's templated notes, so 100% on the QA set measures rule selection and logic, not free-text understanding. Free text is the job of the Gemini path. Score it with a key and shadow it on live cases before go-live (gate 2 in the case document).
 - Neo4j resolution is implemented, and `npm run seed:neo4j` checks it for parity against the in-memory resolver on 544 queries. It was not run in this environment because Docker was unavailable.
 
+## The Bell agent (LangGraph)
+
+Each case runs through a **LangGraph.js `StateGraph`** (`src/lib/agent/graph.ts`):
+- Nodes are deterministic steps.
+- Conditional edges route each case.
+- The graph **pauses at `human_review` with `interrupt()`** until an authorized nurse or physician resumes it with `Command({ resume })`.
+
+There is no path to a decision that skips a human. Gemini is called only inside `read_document` and `resolve_rules` to *read*; it never chooses an edge, a rule or an outcome.
+
+```mermaid
+flowchart TD
+  START([START]) -->|new fax| receipt --> read_document
+  START -.->|provider replied| verify_member
+  START -.->|resume after restart| human_review
+  read_document -->|readable| verify_member
+  read_document -.->|unreadable| intake_handoff --> END([END])
+  verify_member --> resolve_rules --> check_criteria
+  check_criteria -->|missing info| request_info --> human_review
+  check_criteria -->|approve / route / hold| queue_review --> human_review
+  human_review{{"human_review ⏸ interrupt()"}} -->|"Command(resume)"| apply_decision
+  apply_decision -->|approve or deny| END
+  apply_decision -.->|route / request info| human_review
+```
+
+Runs are checkpointed per case (`MemorySaver` in the demo; a Postgres checkpointer in production). If a run is no longer in memory, for example after a restart, a review-only thread resumes the decision. `npx tsx scripts/agent-graph.ts` prints the compiled graph.
+
 ## Architecture
 
 ```mermaid
@@ -110,7 +136,8 @@ src/lib/kb/neo4j.ts     Neo4j seed + Cypher resolver (optional)
 src/lib/engine.ts       rules engine → recommendation, rule path, criteria, letters
 src/lib/facts.ts        deterministic facts parser + untrusted-instruction detector
 src/lib/gemini.ts       Gemini adapters (fax fields, clinical facts)
-src/lib/pipeline.ts     intake pipeline (streams steps to the UI), provider supplements, seeding
+src/lib/agent/graph.ts  the Bell LangGraph agent: nodes, edges, human-in-the-loop interrupt
+src/lib/pipeline.ts     receipt, case lifecycle entry points, seeding
 src/lib/access.ts       personas, role projection, action guardrails
 src/app/provider        Provider Portal
 src/app/dashboard            Bell Console (queue, case workspace, knowledge graph)

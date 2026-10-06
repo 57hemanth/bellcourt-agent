@@ -1,0 +1,34 @@
+%%{init: {'flowchart': {'curve': 'linear'}}}%%
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	receipt(receipt)
+	read_document(read_document)
+	intake_handoff(intake_handoff)
+	verify_member(verify_member)
+	resolve_rules(resolve_rules)
+	check_criteria(check_criteria)
+	request_info(request_info)
+	queue_review(queue_review)
+	human_review(human_review)
+	apply_decision(apply_decision)
+	__end__([<p>__end__</p>]):::last
+	human_review --> apply_decision;
+	intake_handoff --> __end__;
+	queue_review --> human_review;
+	receipt --> read_document;
+	request_info --> human_review;
+	resolve_rules --> check_criteria;
+	verify_member --> resolve_rules;
+	__start__ -.-> receipt;
+	__start__ -.-> verify_member;
+	__start__ -.-> human_review;
+	read_document -.-> verify_member;
+	read_document -.-> intake_handoff;
+	check_criteria -.-> request_info;
+	check_criteria -.-> queue_review;
+	apply_decision -.-> human_review;
+	apply_decision -.-> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2;
+	classDef first fill-opacity:0;
+	classDef last fill:#bfb6fc;
+
